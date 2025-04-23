@@ -1,0 +1,8 @@
+pcap
+dpkt
+rich
+colorama
+scikit-learn
+numpy
+pandas
+joblib
