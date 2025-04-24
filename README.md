@@ -68,7 +68,7 @@ NetSniff Guard is organized into modular components:
 - **Adaptive Thresholds**: Dynamic anomaly scoring based on historical data
 
 ## Requirements
-- Python 3.8 or higher
+- Python 3.7 for pcap library
 - Root/sudo privileges (required for packet capture)
 - Linux-based operating system (tested on Ubuntu/Debian)
 - Required packages:
@@ -88,6 +88,10 @@ NetSniff Guard is organized into modular components:
 git clone https://github.com/your-username/NetSniff-Guard.git
 cd NetSniff-Guard
 
+# Create a virtual environment with Python 3.7 (recommended)
+python3 -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
 # Install dependencies
 pip install -r requirements.txt
 
@@ -95,6 +99,8 @@ pip install -r requirements.txt
 # On Debian/Ubuntu systems:
 sudo apt-get install libpcap-dev
 ```
+
+We strongly recommend using a virtual environment with Python 3.7, as this version has been thoroughly tested with all dependencies in this project. This ensures compatibility and prevents conflicts with other Python packages installed on your system.
 
 ## Usage
 
